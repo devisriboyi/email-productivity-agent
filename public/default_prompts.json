@@ -1,0 +1,70 @@
+{
+  "prompts": [
+    {
+      "name": "Categorize Emails",
+      "description": "Categorize the email into Important/Newsletter/Spam/To-Do",
+      "template": "Categorize the following email into one of: Important, Newsletter, Spam, To-Do. Email subject: {subject}\nEmail body: {email_body}"
+    },
+    {
+      "name": "Action Item Extraction",
+      "description": "Extract tasks as JSON",
+      "template": "Extract tasks from the email. Respond with JSON array of objects like {\"task\":\"...\",\"deadline\":\"...\"}. Email body: {email_body}"
+    },
+    {
+      "name": "Auto-Reply Draft",
+      "description": "Draft a polite reply",
+      "template": "Given the email subject: {subject} and body: {email_body}, draft a polite reply. Provide subject and body only."
+    },
+
+    {
+      "name": "Email Summary",
+      "description": "Summarize any email in 1–3 sentences.",
+      "template": "Summarize the following email clearly in 1–3 sentences. Subject: {subject}. Body: {email_body}."
+    },
+    {
+      "name": "Detect Urgency",
+      "description": "Classify urgency level (Low / Medium / High / Immediate).",
+      "template": "Rate the urgency of this email as Low, Medium, High, or Immediate. Give only the label. Email: {email_body}."
+    },
+    {
+      "name": "Sentiment Analysis",
+      "description": "Identify sentiment (Positive, Neutral, Negative).",
+      "template": "Analyze the tone of this email and respond with only one label: Positive, Neutral, or Negative. Email body: {email_body}"
+    },
+    {
+      "name": "Meeting Extraction",
+      "description": "Extract meeting time, date, and agenda.",
+      "template": "Extract meeting details from this email. Respond in JSON: {\"date\":\"...\",\"time\":\"...\",\"agenda\":\"...\"}. Email: {email_body}"
+    },
+    {
+      "name": "Rewrite in Professional Tone",
+      "description": "Rewrite user’s reply in a professional tone.",
+      "template": "Rewrite the following reply in a professional tone. Email content: {email_body}"
+    },
+    {
+      "name": "Follow-Up Email",
+      "description": "Generate a follow-up email when sender hasn’t responded.",
+      "template": "Write a polite follow-up email based on: Subject: {subject}. Body: {email_body}."
+    },
+    {
+      "name": "Extract Deadlines",
+      "description": "Extract all dates/deadlines from the email.",
+      "template": "Extract all deadlines, due dates, and deliverables mentioned. Return JSON list. Email: {email_body}"
+    },
+    {
+      "name": "Decision Required",
+      "description": "Identify if the email requires a decision.",
+      "template": "Check if this email requires a decision from the user. Respond with Yes or No and explanation in 1 sentence. Email: {email_body}"
+    },
+    {
+      "name": "Bullet Point Summary",
+      "description": "Summarize email in bullet points.",
+      "template": "Summarize the email in 3–6 bullet points. Subject: {subject}. Body: {email_body}"
+    },
+    {
+      "name": "Rewrite Short Version",
+      "description": "Rewrite the email body in a concise short version.",
+      "template": "Rewrite the following email into a short, concise version with only key points. Email: {email_body}"
+    }
+  ]
+}

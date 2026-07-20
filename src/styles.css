@@ -1,0 +1,364 @@
+/* ============================================================
+   🌟 PREMIUM EMAIL-AGENT UI STYLE  
+   Clean ✦ Modern ✦ Animated ✦ Balanced ✦ Professional
+   ============================================================ */
+
+/* ---------- THEME ---------- */
+:root {
+  --bg: #f3f6fa;
+  --card: #ffffff;
+  --accent: #3b82f6;    /* blue */
+  --accent-2: #0ea5a4;  /* teal */
+  --muted: #6b7280;
+  --border: #e4e7ec;
+  --shadow: 0 8px 20px rgba(21, 25, 38, 0.08);
+  --rounded: 14px;
+  --mono: ui-monospace, "Roboto Mono", monospace;
+
+  --brand-img: url("/mnt/data/fbf011e8-afa2-438c-b883-62798325562d.png");
+}
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+  box-sizing: border-box;
+  transition: 0.25s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
+  color: #0f172a;
+}
+
+/* ---------- LAYOUT GRID ---------- */
+.app-shell {
+  display: flex;
+  height: 100vh;
+  gap: 0;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Add small decorative animated dot beside every heading */
+h3::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: .4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.6); }
+  100% { opacity: .4; transform: scale(1); }
+}
+
+/* ============================================================
+   LEFT PANEL – INBOX
+   ============================================================ */
+
+.inbox {
+  width: 26%;
+  background: var(--card);
+  padding: 20px;
+  border-right: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+}
+
+.inbox .controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.inbox button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.inbox button:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* Inbox email list */
+.inbox ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.inbox li {
+  padding: 8px 6px;
+  border-radius: 8px;
+}
+
+.inbox li:hover {
+  background: #eef2ff;
+  transform: translateX(4px);
+}
+
+.inbox a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* X delete icon */
+.del-btn {
+  font-size: 14px;
+  color: #ef4444;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.del-btn:hover {
+  transform: scale(1.25);
+}
+
+/* ============================================================
+   MIDDLE PANEL – EMAIL VIEWER
+   ============================================================ */
+
+.viewer {
+  width: 44%;
+  padding: 22px;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+}
+
+.viewer .card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  border: 1px solid #eef0f5;
+  min-height: 240px;
+
+  /* subtle animation */
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.viewer pre {
+  font-family: var(--mono);
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 1.45;
+}
+
+/* Action buttons */
+.viewer .actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.viewer button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.viewer button:hover {
+  transform: translateY(-2px);
+  background: #f1f5ff;
+}
+
+.viewer button.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.viewer button.primary:hover {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* ============================================================
+   RIGHT PANEL – AGENT CHAT
+   ============================================================ */
+
+.agent {
+  width: 30%;
+  padding: 22px;
+  overflow-y: auto;
+}
+
+.agent .panel {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  border: 1px solid #eef0f5;
+}
+
+.agent label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.agent textarea,
+.agent select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.agent .controls {
+  margin-top: 12px;
+}
+
+.agent button.primary {
+  background: var(--accent-2);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.agent button.primary:hover {
+  box-shadow: 0 4px 12px rgba(14, 165, 164, .35);
+  transform: translateY(-2px);
+}
+
+/* Output box */
+.output {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e7ff;
+  margin-top: 12px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.output pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width: 980px) {
+  .app-shell { flex-direction: column; }
+  .inbox, .viewer, .agent { width: 100%; }
+}
+
+/* ============================================================
+   FONT SIZE UPGRADE – Larger, Cleaner, Easier to Read
+   ============================================================ */
+
+/* Base text */
+body {
+  font-size: 16px !important; /* increased from ~14px */
+}
+
+/* Headings */
+h3 {
+  font-size: 20px !important; /* previously 18px */
+}
+
+/* Inbox email lines */
+.inbox a {
+  font-size: 15px !important;
+}
+
+/* Buttons */
+button {
+  font-size: 15px !important;
+}
+
+/* Viewer email content */
+.viewer pre {
+  font-size: 15px !important;
+  line-height: 1.55;
+}
+
+/* Agent labels */
+.agent label {
+  font-size: 14px !important;
+}
+
+/* Agent inputs */
+.agent select,
+.agent textarea {
+  font-size: 15px !important;
+}
+
+/* Output area */
+.output pre {
+  font-size: 14.5px !important;
+}
+
+/* Larger heading sizes */
+.inbox h3,
+.viewer h3,
+.agent h3 {
+  font-size: 26px !important;    /* increase from ~18–20px */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.agent h4 {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+}
