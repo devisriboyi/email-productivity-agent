@@ -263,7 +263,7 @@ No external DB required.
 
 This Project is under MIT License
 
-***email:*** eswarboyi7@gmail.com | Eswar Reddy Boyi
+***email:*** devisriboyi@gmail.com | Devisri Boyi
 
 ------------
 
