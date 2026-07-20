@@ -1,0 +1,25 @@
+{
+  "emails": [
+    {"sender":"alice@company.com","subject":"Project kickoff: slides","body":"Hi, prepare slides and send by Monday. Deliverables: slides + summary.","timestamp":"2025-11-01T09:30:00"},
+    {"sender":"newsletter@tech.com","subject":"Weekly Tech Roundup","body":"Your weekly tech news.","timestamp":"2025-11-02T06:00:00"},
+    {"sender":"bob@client.com","subject":"Request: budget estimates","body":"Please send budget estimates by Friday.","timestamp":"2025-11-03T11:00:00"},
+    {"sender":"hr@company.com","subject":"Interview schedule","body":"Can you take an interview on Thursday at 3pm?","timestamp":"2025-11-04T08:00:00"},
+    {"sender":"promo@shop.com","subject":"Limited Time Offer!","body":"Buy now and get 50% off.","timestamp":"2025-11-05T07:00:00"},
+    {"sender":"team@project.com","subject":"Standup notes","body":"Here are the meeting notes from today's standup.","timestamp":"2025-11-06T09:00:00"},
+    {"sender":"ceo@company.com","subject":"All hands follow up","body":"Please prepare your Q3 summary slides.","timestamp":"2025-11-07T10:00:00"},
+    {"sender":"no-reply@service.com","subject":"Verify your account","body":"Click here to verify your account.","timestamp":"2025-11-08T12:00:00"},
+    {"sender":"partner@business.com","subject":"Partnership proposal","body":"We want to discuss a potential collaboration next week.","timestamp":"2025-11-09T14:00:00"},
+    {"sender":"alerts@monitor.com","subject":"Server CPU high","body":"CPU crossed 90% on instance X. Investigate.","timestamp":"2025-11-10T03:00:00"},
+    {"sender":"friend@mail.com","subject":"Catch up?","body":"Hey, want to meet for coffee this weekend?","timestamp":"2025-11-11T18:00:00"},
+    {"sender":"feedback@product.com","subject":"Beta test feedback","body":"Here are the bug reports and suggestions.","timestamp":"2025-11-12T15:00:00"},
+     {"sender":"finance@company.com","subject":"Invoice pending","body":"Please clear the pending invoice before the 15th.","timestamp":"2025-11-13T10:00:00"},
+    {"sender":"events@org.com","subject":"Annual meetup invite","body":"You are invited to our annual networking meetup.","timestamp":"2025-11-14T09:00:00"},
+    {"sender":"support@tool.com","subject":"Your ticket has been updated","body":"The issue you reported has been marked as resolved.","timestamp":"2025-11-15T11:00:00"},
+    {"sender":"security@identity.com","subject":"Password reset required","body":"Your password will expire in 2 days. Please reset.","timestamp":"2025-11-16T04:30:00"},
+    {"sender":"teamlead@company.com","subject":"Weekly deliverables","body":"Share the weekly deliverables sheet by tomorrow evening.","timestamp":"2025-11-17T13:00:00"},
+    {"sender":"ops@system.com","subject":"Downtime notice","body":"Scheduled maintenance will occur tonight from 1am–2am.","timestamp":"2025-11-18T20:00:00"},
+    {"sender":"mentor@community.com","subject":"Follow-up discussion","body":"Let’s schedule a follow-up about your progress.","timestamp":"2025-11-19T07:00:00"},
+    {"sender":"ads@promo.com","subject":"Exclusive discount for you","body":"Save 70% on all orders this week only.","timestamp":"2025-11-20T06:00:00"}
+
+  ]
+}
